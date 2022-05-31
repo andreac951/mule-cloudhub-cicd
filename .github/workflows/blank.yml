@@ -94,9 +94,7 @@ jobs:
         AUTHOR: "Andrea"
       run: |
         artifactName=$(ls *.jar | head -1)
-#        mvn deploy -DmuleDeploy -Dap.clientid=${{ secrets.AP_CLIENTID }} \
-#        -Dap.clientsecret=${{ secrets.AP_CLIENTSECRET }}
-        mvn deploy -DmuleDeploy -Ddeployment.name="GITCloude03Student09-ac0531" \
+        mvn deploy -DmuleDeploy -Ddeployment.name="GITCloud03Student09-ac0531" \
         -Dusername=${{ secrets.ANYPOINT_USERNAME }} \
         -Dpassword=${{ secrets.ANYPOINT_PASSWORD }} 
         
